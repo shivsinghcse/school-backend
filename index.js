@@ -23,7 +23,7 @@ import PaymentRouter from './router/payment.router.js'
 import DashboardRouter from './router/dashboard.router.js'
 
 const app = express()
-app.listen(8080, ()=>console.log("App is running on 8080"))
+// app.listen(8080, ()=>console.log("App is running on 8080"))
 
 app.use(cors())
 app.use(express.json())
