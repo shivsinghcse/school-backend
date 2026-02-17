@@ -49,3 +49,5 @@ app.use("/employee", EmployeeRouter)
 app.use("/salary", SalaryRouter)
 app.use("/payment", PaymentRouter)
 app.use("/dashboard", DashboardRouter)
+
+export default app
