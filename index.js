@@ -25,7 +25,16 @@ import DashboardRouter from './router/dashboard.router.js'
 const app = express()
 // app.listen(8080, ()=>console.log("App is running on 8080"))
 
-app.use(cors())
+app.use(cors({
+  origin: [
+    "http://127.0.0.1:5500",
+    "http://localhost:5500",
+    "https://adminfloww.netlify.app"
+  ],
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  credentials: true
+}))
+
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
