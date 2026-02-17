@@ -3,10 +3,9 @@ dotenv.config()
 
 import mongoose from 'mongoose'
 mongoose.connect(process.env.DB)
+  .then(() => console.log("✅ Database connected"))
+  .catch(err => console.error("❌ DB connection error:", err.message))
 
-.then(()=>console.log("Database connected"))
-
-.catch(()=>console.log("Failed to connect with database"))
 
 import cors from 'cors'
 import express from "express"
