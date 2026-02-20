@@ -17,6 +17,10 @@ const teacherSchema = new Schema({
         type: Date,
         required: true
     },
+    doj: {
+        type: Date,
+        required: true
+    },
     religion: {
         type: String,
         required: true
